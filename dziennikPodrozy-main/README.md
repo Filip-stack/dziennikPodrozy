@@ -8,7 +8,7 @@ Interaktywna aplikacja webowa służąca do planowania wyjazdów, zarządzania l
 ## Technologie
 Projekt został zbudowany w oparciu o następujące technologie:
 * **HTML5** – semantyczna struktura aplikacji.
-* **CSS3** – niestandardowe style i animacje (m.in. płynne przewijanie, efekty hover).
+* **CSS3** – niestandardowe style i animacje.
 * **JavaScript** – obsługa logiki interfejsu.
 * **Bootstrap 5** – framework CSS wykorzystany do stworzenia responsywnej siatki, systemu kart oraz wbudowanych komponentów.
 
