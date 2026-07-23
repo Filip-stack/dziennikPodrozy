@@ -14,7 +14,7 @@ Projekt został zbudowany w oparciu o następujące technologie:
 
 ## Funkcjonalności
 * **Karuzela wspomnień:** Dynamiczny pokaz slajdów na ekranie startowym prezentujący zapisane podróże.
-* **Panel informacyjny:** Przejrzysty układ kroków wyjaśniający działanie dziennika (dodawanie podróży, zarządzanie wyjazdami).
+* **Panel informacyjny:** Przejrzysty układ kroków wyjaśniający działanie dziennika - dodawanie podróży, zarządzanie wyjazdami.
 * **Responsywny design:** Interfejs płynnie dopasowujący się do rozdzielczości ekranów urządzeń mobilnych oraz desktopowych.
 
 ## Jak uruchomić projekt lokalnie
