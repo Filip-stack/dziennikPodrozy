@@ -1,0 +1,32 @@
+/* wszystkie zdjecia w sliderze maja ta sama wysokosc */
+.obiekt-dopasowany {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* dostosowanie do malych ekranow  */
+@media (max-width: 768px) {
+    .obiekt-dopasowany {
+        height: 250px;
+    }
+}
+
+/* wygladzanie momentu przenikania zdjec */
+.carousel-fade .carousel-item {
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out !important;
+}
+
+
+
+/* stan poczatkowy animacji, kafelki najpierw przesuniete o 50px w dol */
+.animacja-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Stan końcowy: w pełni widoczne na swoim miejscu (ta klasa będzie dodawana przez JS) */
+.animacja-scroll.pokaz {
+    opacity: 1;
+    transform: translateY(0);
+}

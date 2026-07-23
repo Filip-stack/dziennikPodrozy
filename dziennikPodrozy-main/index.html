@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dziennik Podróży</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#start">Dziennik Podróży</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuGlowne">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuGlowne">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#start">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dodaj" >Dodaj podróż</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lista">Moje wyjazdy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#narzedzia">Narzędzia podróżnika</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5" id="zawartosc-aplikacji">
+
+        <div id="widok-start" class="widok">
+            <div class="text-center mt-5 mb-4">
+                <h1 class="text-primary h2">Witaj w Dzienniku Podróży!</h1>
+                <p class="lead text-muted">Zarządzaj swoimi wspomnieniami. Wybierz opcję z menu powyżej.</p>
+            </div>
+
+            <div id="karuzelaPodrozy" class="carousel slide carousel-fade shadow-lg rounded overflow-hidden mb-5 bg-dark" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/id/1018/1200/400" class="d-block w-100 obiekt-dopasowany" alt="Górski krajobraz">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h2 class="h5">Odkrywaj nieznane szlaki</h2>
+                            <p>Zapisuj każdy krok swojej przygody i wracaj do wspomnień.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/id/1015/1200/400"class="d-block w-100 obiekt-dopasowany" alt="Dolina rzeki">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h2 class="h5">Relaks na łonie natury</h2>
+                            <p>Planuj idealny wypoczynek z naszym dziennikiem.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/id/1036/1200/400" class="d-block w-100 obiekt-dopasowany" alt="Zimowy las">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                            <h2 class="h5">Zimowe szaleństwo</h2>
+                            <p>Pamiętaj o wszystkim, co musisz zabrać na wyjazd.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 mb-5">
+                <h2 class="h3 text-primary text-center mb-4 border-bottom pb-2">Jak działa Dziennik Podróży?</h2>
+                <div class="row g-4 text-center">
+                    
+                    <div class="col-md-4 animacja-scroll">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 border-top border-primary border-3">
+                            <div class="display-4 mb-3">📝</div>
+                            <h3 class="h5 fw-bold">1. Dodaj nową podróż</h3>
+                            <p class="text-muted">Przejdź do zakładki z formularzem. Określ cel, datę i stwórz własną checklistę, żeby nie zapomnieć paszportu ani ładowarki!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 150ms;">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 border-top border-success border-3">
+                            <div class="display-4 mb-3">🗂️</div>
+                            <h3 class="h5 fw-bold">2. Zarządzaj wyjazdami</h3>
+                            <p class="text-muted">Wszystkie zapisane plany znajdziesz w zakładce "Moje wyjazdy". Masz do nich szybki dostęp w dowolnym momencie.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 300ms;">
+                        <div class="p-4 bg-white rounded shadow-sm h-100 border-top border-info border-3">
+                            <div class="display-4 mb-3">🧰</div>
+                            <h3 class="h5 fw-bold">3. Korzystaj z narzędzi</h3>
+                            <p class="text-muted">Sprawdzaj na żywo aktualne kursy walut z NBP oraz 7-dniową prognozę pogody dla wielkich miast, by dobrze się przygotować.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="mt-5 mb-5 pb-5">
+                <h2 class="h3 text-primary text-center mb-4 border-bottom pb-2">Zainspiruj się – Miejsca, które musisz zobaczyć</h2>
+                <div class="row g-4">
+                    
+                    <div class="col-md-4 animacja-scroll">
+                        <div class="card h-100 shadow-sm" onclick="otworzArtykul('neuschwanstein')" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="https://picsum.photos/id/1040/600/400" class="card-img-top" alt="Zamek">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Zamek Neuschwanstein</h3>
+                                <p class="card-text">Bajkowy zamek w Bawarii, który stał się inspiracją dla logo Disneya. Idealny cel na weekendowy roadtrip pełen historii.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 150ms;">
+                        <div class="card h-100 shadow-sm" onclick="otworzArtykul('dolomity')" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="https://picsum.photos/id/1043/600/400" class="card-img-top" alt="Góry">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Dolomity, Włochy</h3>
+                                <p class="card-text">Raj dla miłośników trekkingu i niesamowitych widoków. Monumentalne szczyty i urokliwe alpejskie miasteczka.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 300ms;">
+                        <div class="card h-100 shadow-sm" onclick="otworzArtykul('yosemite')" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="https://picsum.photos/id/1044/600/400" class="card-img-top" alt="Las">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Park Narodowy Yosemite</h3>
+                                <p class="card-text">Dolina pełna potężnych sekwoi, wodospadów i granitowych urwisk. Prawdziwy cud natury na zachodzie Stanów Zjednoczonych.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 600ms;">
+                        <div class="card h-100 shadow-sm" onclick="otworzArtykul('monako')" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="monako.jpg" class="card-img-top" alt="Monte Carlo" style="aspect-ratio: 3/2; object-fit: cover;">
+                        <div class="card-body">
+                            <h3 class="h5 card-title fw-bold">Monte Carlo, Monako</h3>
+                            <p class="card-text">Światowa stolica luksusu, słynnych kasyn i wyścigów Formuły 1. Zobacz przystań pełną wielkich jachtów i poczuj ten niezwykły klimat!</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 750ms;">
+                        <div class="card h-100 shadow-sm" onclick="otworzArtykul('tatry')" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="tatry.jpg" class="card-img-top" alt="Tatry" style="aspect-ratio: 3/2; object-fit: cover;">
+                        <div class="card-body">
+                            <h3 class="h5 card-title fw-bold">Tatry, Polska</h3>
+                            <p class="card-text">Najwyższe pasmo Karpat. Krystalicznie czyste jeziora, ostre granie i malownicze doliny to idealne miejsce na aktywny wypoczynek blisko natury.</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 animacja-scroll" style="transition-delay: 900ms;">
+                        <div class="card h-100 shadow-sm" onclick="otworzArtykul('japonia')" style="cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            <img src="japonia.jpg" class="card-img-top" alt="Góra Fudżi, Japonia" style="aspect-ratio: 3/2; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 card-title fw-bold">Góra Fudżi, Japonia</h3>
+                                <p class="card-text">Niezwykłe połączenie starożytnych tradycji i futurystycznej nowoczesności. Odpocznij w gorących źródłach i zobacz kwitnące wiśnie.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5 mb-5 pb-4">
+                <div class="col-md-8">
+                    <div class="card shadow-sm border-0 border-start border-warning border-4 bg-light">
+                        <div class="card-body text-center py-4">
+                            <h3 class="h5 text-warning mb-2">Porada dnia</h3>
+                            <div id="porada-dnia" class="fst-italic text-secondary">
+                                Szukam porady w notatkach...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="widok-dodaj" class="widok d-none">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="h4 mb-0">Dodaj nową podróż</h2>
+                </div>
+                <div class="card-body">
+                    <form id="formularz-podrozy" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nazwa-wyjazdu" class="form-label">Nazwa wyjazdu <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nazwa-wyjazdu" placeholder="np. Weekend w Rzymie" required minlength="3">
+                                <div class="invalid-feedback">Proszę podać nazwę wyjazdu (min. 3 znaki).</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="data-wyjazdu" class="form-label">Data wyjazdu <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="data-wyjazdu" required>
+                                <div class="invalid-feedback">Proszę wybrać datę.</div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="cel-podrozy" class="form-label">Cel podróży</label>
+                                <select class="form-select" id="cel-podrozy">
+                                    <option value="wypoczynek">Wypoczynek / Relaks</option>
+                                    <option value="zwiedzanie">Zwiedzanie / Kultura</option>
+                                    <option value="praca">Wyjazd Służbowy</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label d-block">Główny środek transportu</label>
+                                <div class="form-check form-check-inline mt-2">
+                                    <input class="form-check-input" type="radio" name="transport" id="trans-samolot" value="Samolot" checked>
+                                    <label class="form-check-label" for="trans-samolot">Samolot</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="transport" id="trans-pociag" value="Pociąg">
+                                    <label class="form-check-label" for="trans-pociag">Pociąg</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="transport" id="trans-auto" value="Samochód">
+                                    <label class="form-check-label" for="trans-auto">Samochód</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 mt-3">
+                            <label class="form-label d-block">Co przygotować?</label>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="check-paszport" value="Paszport">
+                                <label class="form-check-label" for="check-paszport">Paszport</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="check-ubezpieczenie" value="Ubezpieczenie">
+                                    <label class="form-check-label" for="check-ubezpieczenie">Ubezpieczenie</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="check-waluta" value="Lokalna waluta">
+                                <label class="form-check-label" for="check-waluta">Lokalna waluta</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 btn-lg">Zapisz podróż</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="widok-lista" class="widok d-none">
+            <h2 class="h3 text-primary border-bottom pb-2 mb-4">Moje zapisane wyjazdy</h2>
+            <div id="kontener-tabeli">
+                <p class="text-muted">Jeszcze nic tu nie ma. Dodaj swoją pierwszą podróż!</p>
+            </div>
+        </div>
+
+        <div id="widok-narzedzia" class="widok d-none">
+            <h2 class="h3 text-primary border-bottom pb-2 mb-4">Narzędzia podróżnika</h2>
+            <p class="text-muted mb-4">Przygotuj się do wyjazdu. Poniżej znajdziesz aktualne kursy walut pobierane na żywo z Narodowego Banku Polskiego.</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 border-top border-primary border-3">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-center text-primary mb-4">Kursy walut (NBP)</h3>
+                            
+                            <div id="kursy-walut">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Ładowanie...</span>
+                                </div>
+                                <span class="text-muted ms-2">Pobieranie danych...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="card shadow-sm border-0 border-top border-info border-3 h-100">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-center text-info mb-4">Aktualna Pogoda</h3>
+                            
+                            <select id="wybor-miasta" class="form-select mb-4 shadow-sm">
+                                <option value="52.2297,21.0122">Warszawa, Polska</option>
+                                <option value="48.8566,2.3522">Paryż, Francja</option>
+                                <option value="41.8919,12.5113">Rzym, Włochy</option>
+                                <option value="35.6895,139.6917">Tokio, Japonia</option>
+                                <option value="40.7128,-74.0060">Nowy Jork, USA</option>
+                            </select>
+
+                            <div id="wynik-pogody" class="text-center">
+                                <div class="spinner-border text-info" role="status"></div>
+                                <div class="text-muted mt-2">Sprawdzanie chmur...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="widok-artykul" class="widok d-none">
+            <button class="btn btn-outline-primary mb-4" onclick="window.location.hash='#start'; location.reload();">
+                ⬅ Powrót do strony głównej
+            </button>
+            
+            <div id="kontener-artykulu" class="bg-white p-4 p-md-5 rounded shadow-sm border-top border-primary border-3">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
