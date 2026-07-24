@@ -22,6 +22,7 @@ The project does not require configuring a complex backend environment or instal
 
 1. Clone the repository to your local drive:
    ```bash
-   git clone [https://github.com/Filip-stack/dziennikPodrozy.git](https://github.com/Filip-stack/dziennikPodrozy.git)
+   git clone https://github.com/Filip-stack/dziennikPodrozy.git
+   ```
 2. Navigate to the project folder.
-3. Open the index.html file in any modern web browser.
+3. Open the `index.html` file in any modern web browser.
