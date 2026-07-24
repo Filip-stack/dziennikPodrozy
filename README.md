@@ -1,27 +1,27 @@
-# Dziennik Podróży
+# Travel Journal
 
-Interaktywna aplikacja webowa służąca do planowania wyjazdów, zarządzania listą rzeczy do spakowania oraz zapisywania wspomnień z odbytych tras. Projekt stworzony w celu rozwijania umiejętności budowania nowoczesnych i responsywnych interfejsów użytkownika.
+An interactive web application for planning trips, managing packing lists, and saving memories from completed journeys. The project was created to develop skills in building modern and responsive user interfaces.
 
-## Podgląd
-![Podgląd aplikacji](obraz.png)
+## Preview
+![Application preview](obraz.png)
 
-## Technologie
-Projekt został zbudowany w oparciu o następujące technologie:
-* **HTML5** – semantyczna struktura aplikacji.
-* **CSS3** – niestandardowe style i animacje.
-* **JavaScript** – obsługa logiki interfejsu.
-* **Bootstrap 5** – framework CSS wykorzystany do stworzenia responsywnej siatki, systemu kart oraz wbudowanych komponentów.
+## Technologies
+The project was built using the following technologies:
+* **HTML5** – semantic application structure.
+* **CSS3** – custom styles and animations.
+* **JavaScript** – interface logic handling.
+* **Bootstrap 5** – CSS framework used to create a responsive grid, card system, and built-in components.
 
-## Funkcjonalności
-* **Karuzela wspomnień:** Dynamiczny pokaz slajdów na ekranie startowym prezentujący zapisane podróże.
-* **Panel informacyjny:** Przejrzysty układ kroków wyjaśniający działanie dziennika - dodawanie podróży, zarządzanie wyjazdami.
-* **Responsywny design:** Interfejs płynnie dopasowujący się do rozdzielczości ekranów urządzeń mobilnych oraz desktopowych.
+## Features
+* **Memories carousel:** A dynamic slideshow on the home screen presenting saved trips.
+* **Information panel:** A clear step-by-step layout explaining how the journal works - adding trips, managing journeys.
+* **Responsive design:** An interface that smoothly adapts to the screen resolutions of mobile and desktop devices.
 
-## Jak uruchomić projekt lokalnie
-Projekt nie wymaga konfiguracji skomplikowanego środowiska backendowego ani instalacji zewnętrznych paczek. 
+## How to run the project locally
+The project does not require configuring a complex backend environment or installing external packages. 
 
-1. Sklonuj repozytorium na swój dysk lokalny:
+1. Clone the repository to your local drive:
    ```bash
    git clone [https://github.com/Filip-stack/dziennikPodrozy.git](https://github.com/Filip-stack/dziennikPodrozy.git)
-2. Wejdź do folderu z projektem.
-3. Otwórz plik index.html w dowolnej nowoczesnej przeglądarce internetowej.
+2. Navigate to the project folder.
+3. Open the index.html file in any modern web browser.
